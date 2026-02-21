@@ -1,5 +1,5 @@
-Author : Priyanshu Jangalekar
-Plz feal free to make a PR
+Author : Priyanshu Jangalekar.
+Plz feal free to make a PR.
 Installation and Set-up Guid is below.......
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
