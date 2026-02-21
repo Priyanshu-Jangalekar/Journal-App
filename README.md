@@ -1,6 +1,8 @@
-Author : Priyanshu Jangalekar.
-Plz feal free to make a PR.
-Installation and Set-up Guid is below.......
+📓 Journal App – Secure Backend System 
+
+Author: Priyanshu Jangalekar
+
+Feel free to create a Pull Request 🚀
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 📓 Journal App – Secure Backend System with Analytics
@@ -11,79 +13,123 @@ This project demonstrates strong backend fundamentals including authentication, 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 🛠️ Tech Stack
+
 Java
+
 Spring Boot
+
 Spring Security
+
 JWT Authentication
+
 MongoDB
-Redis (for caching)
+
+Redis (Caching)
+
+In-Memory Caching
+
 Maven
+
 REST APIs
+
 Role-Based Authorization
-In Memory Caching
-SMTP 
-SLF4J
-Spring Security
+
+SMTP (Email Integration)
+
+SLF4J (Logging)
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ⚙️ Installation & Setup Guide
 Follow the steps below to run this project locally.☺️
 
 📋 Prerequisites
+
 Make sure you have the following installed:
+
 Java 17+
+
 Maven
+
 MongoDB (running locally or Atlas)
+
 Redis (running locally)
+
 Git
+
 Optional:
+
 Postman (for testing APIs)
 
-STEP 1
+
 📥 1️⃣ Clone the Repository
+
 git clone https://github.com/Priyanshu-Jangalekar/Journal-App.git
+
 cd Journal-App
 
-STEP 2
 🔑 2️⃣ Configure Environment Variables
+
 This project requires certain API keys and credentials.
+
 Create or update your application.properties (or application.yml) file:
-# MongoDB
+
+👉👉👉MongoDB
+
 spring.data.mongodb.uri=mongodb://localhost:27017/journaldb
 
-# Redis
+👉👉👉Redis
+
 spring.redis.host=localhost
+
 spring.redis.port=6379
 
-# JWT Secret
+👉👉👉JWT Secret
+
 jwt.secret=your_secret_key_here
 
-# Email Configuration
-spring.mail.host=smtp.gmail.com
-spring.mail.port=587
-spring.mail.username=your_email
-spring.mail.password=your_app_password
-spring.mail.properties.mail.smtp.auth=true
-spring.mail.properties.mail.smtp.starttls.enable=true
+👉👉👉mail Configuration
 
-# Sentiment API Key (if applicable)
+-->spring.mail.host=smtp.gmail.com
+
+-->spring.mail.port=587
+
+-->spring.mail.username=your_email
+
+-->spring.mail.password=your_app_password
+
+-->spring.mail.properties.mail.smtp.auth=true
+
+-->spring.mail.properties.mail.smtp.starttls.enable=true
+
+👉👉👉Sentiment API Key (if applicable)
+
 sentiment.api.key=your_api_key_here
 
-STEP 3
+
 ▶️ 3️⃣ Run the Application
+
 Using Maven
+
 mvn clean install
+
 mvn spring-boot:run
 
-STEP 4
+
 🌐 4️⃣ Access the Application
+
 The server will start on:
+
 http://localhost:8080
+
 Now use Postman to hit api
 
-STEP 5
+
 🧪 5️⃣ Testing Authentication Flow
+
 Register a new user
+
 Login to receive JWT token
+
 Use the token in the Authorization header:
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
