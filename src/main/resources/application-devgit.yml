@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: journalApp
+
+  data:
+    mongodb:
+      uri: ${Mongo_URI}
+      database: ${Mongo_DB}
+      auto-index-creation: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${user_name}
+    password: ${password}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  redis:
+    host: localhost
+    port: 6379
+
+Weather:
+  api:
+    key: ${<api_key>}
